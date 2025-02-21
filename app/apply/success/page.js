@@ -1,3 +1,5 @@
+"use client"; // Ensure this directive is at the top of the file
+
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
