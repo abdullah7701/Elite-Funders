@@ -144,8 +144,8 @@ export default function Footer1() {
           <div className="container">
             <div className="site-footer__bottom-inner">
               <p className="site-footer__bottom-text">
-                Copyright © 2024 Elite Funding Group by{" "}
-                <Link href="#">EFG-Corp.</Link> All Rights Reserved
+                Copyright © 2024 {" "}
+                <Link href="#">Elite Funders </Link> All Rights Reserved
               </p>
             </div>
           </div>

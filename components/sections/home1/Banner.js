@@ -55,24 +55,21 @@ export default function Banner() {
               <div className="container">
                 <div className="main-slider__content">
                   <div className="main-slider__section-and-text">
-                    <div className="section-title text-left">
-                      <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">
-                          RELIABLE. Simple. fAST
-                        </p>
-                      </div>
-                      <h2 className="section-title__title">
-                        Get Funding
-                        <br /> That Propels
-                        <br /> Your Future
-                      </h2>
-                    </div>
-                    <p className="main-slider__text">
-                      Get small business financing now. You are just a few
-                      minutes away from getting
-                      <br /> the fuel you need to soar to new heights.
-                    </p>
-                  </div>
+  <div className="section-title text-left">
+    <div className="section-title__tagline-box">
+      <p className="section-title__tagline">
+        RELIABLE. Simple. fAST
+      </p>
+    </div>
+    <h2 className="section-title__title" style={{ fontFamily: 'Arial' }}>
+      Quick Business
+      <br /> Funding
+    </h2>
+  </div>
+  <p className="main-slider__text">
+  Get fast access to SBA loans, term loans, and more with a simple <br />5-minute application. Secure $5,000-$2M in funding without <br />a hard credit check.
+  </p>
+</div>
                   <div className="main-slider__ratting">
                     <img src="assets/images/resources/Trustpilot.webp" />
                   </div>
@@ -85,7 +82,7 @@ export default function Banner() {
                           borderRadius: "50rem",
                         }}
                       >
-                        Apply NOW
+                        Get Funded
                       </Link>
                     </div>
                   </div>
@@ -126,7 +123,7 @@ export default function Banner() {
                           RELIABLE. Simple. fAST
                         </p>
                       </div>
-                      <h2 className="section-title__title">
+                      <h2 className="section-title__title" style={{ fontFamily: 'Arial' }}>
                         Life Funding
                         <br /> That Creates
                         <br /> Future
@@ -191,7 +188,7 @@ export default function Banner() {
                           RELIABLE. Simple. fAST
                         </p>
                       </div>
-                      <h2 className="section-title__title">
+                      <h2 className="section-title__title" style={{ fontFamily: 'Arial' }}>
                         Life Funding
                         <br /> That Creates
                         <br /> Future
