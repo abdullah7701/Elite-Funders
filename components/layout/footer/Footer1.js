@@ -113,7 +113,7 @@ export default function Footer1() {
                 >
                   <div className="footer-widget__column footer-widget__newsletter">
                     <div className="footer-widget__title-box">
-                      <h3 className="footer-widget__title">Newsletter</h3>
+                      <h3 className="footer-widget__title"></h3>
                     </div>
                     <p className="footer-widget__newsletter-text">
                       Subscribe our newsletter to get the

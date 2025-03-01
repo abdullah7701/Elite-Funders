@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+
 export default function Faq() {
   const [isActive, setIsActive] = useState({
     status: false,
@@ -23,7 +24,7 @@ export default function Faq() {
 
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Faq">
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="FAQ">
         <div>
           {/* FAQ Page Start */}
           <section className="faq-page">
@@ -42,8 +43,8 @@ export default function Faq() {
                     </p>
                   </div>
                   <h2 className="section-title__title">
-                    Frequently asked question
-                    <br /> & answer here
+                    Frequently Asked Questions
+                    <br /> & Answers Here
                   </h2>
                 </div>
               </div>
@@ -59,7 +60,7 @@ export default function Faq() {
                           </button>
                         </form>
                       </div>
-                      <div className="faq-page__bottom-left-img-box">
+                      {/* <div className="faq-page__bottom-left-img-box">
                         <div className="faq-page__bottom-left-img">
                           <img
                             src="assets/images/resources/faq-page-bottom-left-img-1.jpg"
@@ -70,7 +71,7 @@ export default function Faq() {
                           Elite Funding
                           <br /> Group
                         </h3>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="col-xl-7 col-lg-7">
@@ -84,18 +85,14 @@ export default function Faq() {
                           }
                           onClick={() => handleToggle(1)}>
                           <div className="accrodion-title">
-                            <h4>How can I make a change to my application?</h4>
+                            <h4>How does business funding with EFG work?</h4>
                           </div>
                           <div className="accrodion-content">
                             <div className="inner">
                               <p>
-                                The main elements of a marketing strategy are
-                                your target audiance goals and objectives and
-                                the tax you will employ to acitvely markter to
-                                your achive the goals
+                                With no fixed payments, it’s pay as you go! We collect a predetermined percentage of your sales, so as your sales fluctuate, your payments adjust accordingly. Reconcile payments based on sales daily, weekly, or monthly for ultimate flexibility.
                               </p>
                             </div>
-                            {/*  /.inner  */}
                           </div>
                         </div>
                         <div
@@ -104,18 +101,14 @@ export default function Faq() {
                           }
                           onClick={() => handleToggle(2)}>
                           <div className="accrodion-title">
-                            <h4>Can I get a free trial before I purchase?</h4>
+                            <h4>Is business funding secure?</h4>
                           </div>
                           <div className="accrodion-content">
                             <div className="inner">
                               <p>
-                                The main elements of a marketing strategy are
-                                your target audiance goals and objectives and
-                                the tax you will employ to acitvely markter to
-                                your achive the goals
+                                Rest assured, your information is secure with us. Learn more in our Privacy Policy.
                               </p>
                             </div>
-                            {/*  /.inner  */}
                           </div>
                         </div>
                         <div
@@ -124,18 +117,14 @@ export default function Faq() {
                           }
                           onClick={() => handleToggle(3)}>
                           <div className="accrodion-title">
-                            <h4>What is the purpose of digital agency?</h4>
+                            <h4>What documents are required for funding?</h4>
                           </div>
                           <div className="accrodion-content">
                             <div className="inner">
                               <p>
-                                The main elements of a marketing strategy are
-                                your target audiance goals and objectives and
-                                the tax you will employ to acitvely markter to
-                                your achive the goals
+                                All you need are a few documents showcasing your business performance and the last 4 months of business bank statements. Ready to get started? <Link href="/apply">Apply here</Link>.
                               </p>
                             </div>
-                            {/*  /.inner  */}
                           </div>
                         </div>
                         <div
@@ -144,18 +133,14 @@ export default function Faq() {
                           }
                           onClick={() => handleToggle(4)}>
                           <div className="accrodion-title">
-                            <h4>Do you support banking loan?</h4>
+                            <h4>How does credit impact my application?</h4>
                           </div>
                           <div className="accrodion-content">
                             <div className="inner">
                               <p>
-                                The main elements of a marketing strategy are
-                                your target audiance goals and objectives and
-                                the tax you will employ to acitvely markter to
-                                your achive the goals
+                                At Elite Funding Group, we don’t let credit dictate your entire story. We take a holistic approach to understand your credit history and your business’s overall performance.
                               </p>
                             </div>
-                            {/*  /.inner  */}
                           </div>
                         </div>
                         <div
@@ -164,18 +149,62 @@ export default function Faq() {
                           }
                           onClick={() => handleToggle(5)}>
                           <div className="accrodion-title">
-                            <h4>Where can I find out about funding?</h4>
+                            <h4>How soon will I have access to funds?</h4>
                           </div>
                           <div className="accrodion-content">
                             <div className="inner">
                               <p>
-                                The main elements of a marketing strategy are
-                                your target audiance goals and objectives and
-                                the tax you will employ to acitvely markter to
-                                your achive the goals
+                                Access funds within 24 hours, sometimes even sooner, once you’ve completed the funding process.
                               </p>
                             </div>
-                            {/*  /.inner  */}
+                          </div>
+                        </div>
+                        <div
+                          className={
+                            isActive.key == 6 ? "accrodion active" : "accrodion"
+                          }
+                          onClick={() => handleToggle(6)}>
+                          <div className="accrodion-title">
+                            <h4>How are repayments made?</h4>
+                          </div>
+                          <div className="accrodion-content">
+                            <div className="inner">
+                              <p>
+                                Repayments are made via ACH from your Business Bank Account or through Credit Cards, delivering the specified percentage of receivables on a daily basis.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className={
+                            isActive.key == 7 ? "accrodion active" : "accrodion"
+                          }
+                          onClick={() => handleToggle(7)}>
+                          <div className="accrodion-title">
+                            <h4>What can the funds be used for?</h4>
+                          </div>
+                          <div className="accrodion-content">
+                            <div className="inner">
+                              <p>
+                                Use the funds for various business purposes, putting you in control of your business’s growth and success—whether it’s payroll, remodeling, inventory, capital expansion, marketing, or equipment.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className={
+                            isActive.key == 8 ? "accrodion active" : "accrodion"
+                          }
+                          onClick={() => handleToggle(8)}>
+                          <div className="accrodion-title">
+                            <h4>Why choose EFG over traditional banks?</h4>
+                          </div>
+                          <div className="accrodion-content">
+                            <div className="inner">
+                              <p>
+                                We offer a quick and flexible product without interest or late fees. While not the cheapest option, our process is simple—we provide cash today, and you repay as you generate revenue.
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -206,7 +235,7 @@ export default function Faq() {
                   </p>
                 </div>
                 <div className="cta-one__btn-box">
-                  <Link href="contact" className="cta-one__btn thm-btn">
+                  <Link href="/apply" className="cta-one__btn thm-btn">
                     APPLY NOW
                   </Link>
                 </div>
